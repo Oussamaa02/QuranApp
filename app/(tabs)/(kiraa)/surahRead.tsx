@@ -48,7 +48,8 @@ const QuranPage = () => {
         const { data } = response.data;
         const foundSurah = data.surahs.find((s: Surah) => s.number.toString() === number);
         setSurah(foundSurah);
-      } catch (error) {
+      } 
+      catch (error) {
         console.error('Error fetching Quran data:', error);
       }
     };
