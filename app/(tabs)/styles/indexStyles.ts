@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
+
     container: {
       flex: 1,
       flexDirection: "row",
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     },
     text: {
       fontWeight: '400',
-      fontSize: 28,
+      fontSize: 24,
       textAlign: 'left',
       top: 9,
       left: 13,

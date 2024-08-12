@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { FlatList, Text, StyleSheet, View, ImageBackground } from 'react-native';
+import { FlatList, Text, StyleSheet, View } from 'react-native';
 import axios from 'axios';
 import * as Font from 'expo-font';
 import { useLocalSearchParams } from 'expo-router';

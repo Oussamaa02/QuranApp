@@ -12,6 +12,7 @@ interface CustomHeaderProps {
 
 export default function CustomHeader({ title, showBackButton, showSearchButton }: CustomHeaderProps) {
   const router = useRouter();
+ 
   return (
     <View style={styles.container}>
       {showBackButton && (

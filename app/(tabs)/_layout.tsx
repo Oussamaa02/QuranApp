@@ -8,15 +8,12 @@ const Layout = () => {
     const router = useRouter();
   return (
     <Tabs  screenOptions={{headerShown:false, tabBarActiveTintColor: '#3F566E', tabBarInactiveTintColor:'#AFAFAF',title:'', }}>
-        <Tabs.Screen name="(forum)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='people' color={color} />,}}   />
-        <Tabs.Screen name="(prayerTime)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='time' color={color} />,}}  />
-        <Tabs.Screen name="(adhkar)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='reader' color={color} />}}  />
-        <Tabs.Screen name="(tertil)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='headset' color={color} /> ,}} />
-        <Tabs.Screen name="(kiraa)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='book' color={color} />}}  />
         <Tabs.Screen name="index" options={{headerShown:true,tabBarStyle: { display: 'none' } ,tabBarIcon: ({ color }) => <Ionicons size={28} name='home' color={color} />, header: () => (<HomeHeader/>)}} />
-
-        
-
+        <Tabs.Screen name="(kiraa)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='book' color={color} />}}  />
+        <Tabs.Screen name="(tertil)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='headset' color={color} /> ,}} />
+        <Tabs.Screen name="(adhkar)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='reader' color={color} />}}  />
+        <Tabs.Screen name="(prayerTime)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='time' color={color} />,}}  />
+        <Tabs.Screen name="(forum)" options={{tabBarIcon: ({ color }) => <Ionicons size={28} name='people' color={color} />,}}   />
     </Tabs>
   )
 }
