@@ -1,7 +1,7 @@
 import { View, Text, Image, FlatList, StyleSheet } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import SurahStarIcon from "@/components/surahStarIcon";
-import { sheikhs } from "../data/sheikhs";
+import { sheikhs } from "../../../assets/data/sheikhs";
 
 export default function SheikhSoura() {
   const { name, image } = useLocalSearchParams();

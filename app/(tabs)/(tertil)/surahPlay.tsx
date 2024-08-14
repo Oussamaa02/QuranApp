@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import React from 'react';
 import { useLocalSearchParams } from 'expo-router';
 import AudioPlayer from '@/components/audioPlayer';
-import { sheikhs } from '../data/sheikhs';
+import { sheikhs } from '../../../assets/data/sheikhs';
 
 export default function SurahPlay() {
   const { name, image, surahName } = useLocalSearchParams<{ name: string; image: any; surahName: string; }>();

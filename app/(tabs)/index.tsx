@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { useEffect, useState } from "react";
 import 'dayjs/locale/ar';
 import moment from "moment-hijri";
-import { styles } from "./styles/indexStyles";
+import { styles } from "../../assets/styles/indexStyles";
 import { useRouter } from "expo-router";
 
 moment.locale("ar");
@@ -32,11 +32,11 @@ export default function Index() {
   };
 
   const items = [
-    { text: 'قـراءة', image: require('@/assets/images/homePage/kiraa.png'), press:'kiraa'},
-    { text: 'تـرتيل', image: require('@/assets/images/homePage/tertil.png') , press:'tertil'},
-    { text: 'أذكـار', image: require('@/assets/images/homePage/adhkar.png') , press:'adhkar'},
-    { text: 'مواعيد الصلاة', image: require('@/assets/images/homePage/prayerTime.png') , press:'prayerTime'},
-    { text: 'منـتدى التـفاعـل ', image: require('@/assets/images/homePage/forum.png') , press:'forum'},
+    { text: 'قـراءة', image: require('@/assets/images/homePage/kiraa.png'), press:'kiraa' as any},
+    { text: 'تـرتيل', image: require('@/assets/images/homePage/tertil.png') , press:'tertil'as any},
+    { text: 'أذكـار', image: require('@/assets/images/homePage/adhkar.png') , press:'adhkar' as any},
+    { text: 'مواعيد الصلاة', image: require('@/assets/images/homePage/prayerTime.png') , press:'prayerTime' as any},
+    { text: 'منـتدى التـفاعـل ', image: require('@/assets/images/homePage/forum.png') , press:'forum' as any},
   ];
 
   return (

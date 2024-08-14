@@ -1,6 +1,6 @@
 import { View ,Text,TouchableOpacity, ScrollView,Image} from "react-native";
-import { styles } from "../styles/sheikhStyles";
-import { sheikhs } from "../data/sheikhs";
+import { styles } from "../../../assets/styles/sheikhStyles";
+import { sheikhs } from "../../../assets/data/sheikhs";
 import {  useRouter } from "expo-router";
 
 export default function Tertil() {

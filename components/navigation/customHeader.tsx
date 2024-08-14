@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
-import { styles } from '@/app/(tabs)/styles/layoutStyles';
+import { styles } from '@/assets/styles/layoutStyles';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
 
